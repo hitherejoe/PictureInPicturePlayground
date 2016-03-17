@@ -3,75 +3,75 @@
     "-//Puppy Crawl//DTD Check Configuration 1.3//EN"
     "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
 
-<module name = "Checker">
+<module title = "Checker">
 
-    <property name="charset" value="UTF-8"/>
+    <property title="charset" value="UTF-8"/>
 
-    <property name="severity" value="error"/>
+    <property title="severity" value="error"/>
 
-    <module name="FileTabCharacter">
-        <property name="eachLine" value="true"/>
+    <module title="FileTabCharacter">
+        <property title="eachLine" value="true"/>
     </module>
 
-    <module name="TreeWalker">
+    <module title="TreeWalker">
 
         <!-- Imports -->
 
-        <module name="RedundantImport">
-            <property name="severity" value="error"/>
+        <module title="RedundantImport">
+            <property title="severity" value="error"/>
         </module>
 
-        <module name="AvoidStarImport">
-            <property name="severity" value="error"/>
+        <module title="AvoidStarImport">
+            <property title="severity" value="error"/>
         </module>
 
         <!-- General Code Style -->
 
-        <module name="LineLength">
-            <property name="max" value="100"/>
-            <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://"/>
+        <module title="LineLength">
+            <property title="max" value="100"/>
+            <property title="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://"/>
         </module>
 
-        <module name="EmptyBlock">
-            <property name="option" value="TEXT"/>
-            <property name="tokens" value="LITERAL_TRY, LITERAL_FINALLY, LITERAL_IF, LITERAL_ELSE, LITERAL_SWITCH"/>
+        <module title="EmptyBlock">
+            <property title="option" value="TEXT"/>
+            <property title="tokens" value="LITERAL_TRY, LITERAL_FINALLY, LITERAL_IF, LITERAL_ELSE, LITERAL_SWITCH"/>
         </module>
 
-        <module name="EmptyCatchBlock">
-            <property name="exceptionVariableName" value="expected"/>
+        <module title="EmptyCatchBlock">
+            <property title="exceptionVariableName" value="expected"/>
         </module>
 
-        <module name="LeftCurly">
-            <property name="maxLineLength" value="100"/>
+        <module title="LeftCurly">
+            <property title="maxLineLength" value="100"/>
         </module>
 
-        <module name="RightCurly">
-            <property name="option" value="alone"/>
-            <property name="tokens" value="CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, LITERAL_DO, STATIC_INIT, INSTANCE_INIT"/>
+        <module title="RightCurly">
+            <property title="option" value="alone"/>
+            <property title="tokens" value="CLASS_DEF, METHOD_DEF, CTOR_DEF, LITERAL_FOR, LITERAL_WHILE, LITERAL_DO, STATIC_INIT, INSTANCE_INIT"/>
         </module>
 
-        <module name="RightCurly">
-            <property name="option" value="same"/>
+        <module title="RightCurly">
+            <property title="option" value="same"/>
         </module>
 
-        <module name="NoFinalizer"/>
+        <module title="NoFinalizer"/>
 
-        <module name="ArrayTypeStyle"/>
+        <module title="ArrayTypeStyle"/>
 
-        <module name="ModifierOrder"/>
+        <module title="ModifierOrder"/>
 
-        <module name="Indentation">
-            <property name="basicOffset" value="4"/>
-            <property name="braceAdjustment" value="0"/>
-            <property name="caseIndent" value="4"/>
-            <property name="throwsIndent" value="4"/>
-            <property name="lineWrappingIndentation" value="8"/>
-            <property name="arrayInitIndent" value="2"/>
+        <module title="Indentation">
+            <property title="basicOffset" value="4"/>
+            <property title="braceAdjustment" value="0"/>
+            <property title="caseIndent" value="4"/>
+            <property title="throwsIndent" value="4"/>
+            <property title="lineWrappingIndentation" value="8"/>
+            <property title="arrayInitIndent" value="2"/>
         </module>
 
         <!-- White Space -->
 
-        <module name="GenericWhitespace">
+        <module title="GenericWhitespace">
             <message key="ws.followed"
                      value="GenericWhitespace ''{0}'' is followed by whitespace."/>
             <message key="ws.preceded"
@@ -82,84 +82,84 @@
                      value="GenericWhitespace ''{0}'' is not preceded with whitespace."/>
         </module>
 
-        <module name="WhitespaceAround">
-            <property name="allowEmptyConstructors" value="true"/>
-            <property name="allowEmptyMethods" value="false"/>
-            <property name="allowEmptyTypes" value="false"/>
-            <property name="allowEmptyLoops" value="false"/>
+        <module title="WhitespaceAround">
+            <property title="allowEmptyConstructors" value="true"/>
+            <property title="allowEmptyMethods" value="false"/>
+            <property title="allowEmptyTypes" value="false"/>
+            <property title="allowEmptyLoops" value="false"/>
             <message key="ws.notFollowed"
                      value="WhitespaceAround: ''{0}'' is not followed by whitespace. Empty blocks may only be represented as '{}' when not part of a multi-block statement (4.1.3)"/>
             <message key="ws.notPreceded"
                      value="WhitespaceAround: ''{0}'' is not preceded with whitespace."/>
-            <property name="severity" value="error"/>
+            <property title="severity" value="error"/>
         </module>
 
-        <module name="WhitespaceAfter">
-            <property name="tokens" value="COMMA, SEMI, TYPECAST"/>
+        <module title="WhitespaceAfter">
+            <property title="tokens" value="COMMA, SEMI, TYPECAST"/>
         </module>
 
-        <module name="NoWhitespaceBefore">
-            <property name="tokens" value="SEMI, DOT, POST_DEC, POST_INC"/>
-            <property name="allowLineBreaks" value="true"/>
+        <module title="NoWhitespaceBefore">
+            <property title="tokens" value="SEMI, DOT, POST_DEC, POST_INC"/>
+            <property title="allowLineBreaks" value="true"/>
         </module>
 
-        <module name="NoWhitespaceAfter">
-            <property name="tokens" value="BNOT, DEC, DOT, INC, LNOT, UNARY_MINUS, UNARY_PLUS"/>
-            <property name="allowLineBreaks" value="true"/>
+        <module title="NoWhitespaceAfter">
+            <property title="tokens" value="BNOT, DEC, DOT, INC, LNOT, UNARY_MINUS, UNARY_PLUS"/>
+            <property title="allowLineBreaks" value="true"/>
         </module>
 
         <!-- Naming -->
 
-        <module name="PackageName">
-            <property name="format" value="^[a-z]+(\.[a-z][a-z0-9]*)*$"/>
-            <message key="name.invalidPattern"
-                     value="Package name ''{0}'' must match pattern ''{1}''."/>
+        <module title="PackageName">
+            <property title="format" value="^[a-z]+(\.[a-z][a-z0-9]*)*$"/>
+            <message key="title.invalidPattern"
+                     value="Package title ''{0}'' must match pattern ''{1}''."/>
         </module>
 
-        <module name="MethodName">
-            <property name="format" value="^[a-z][a-z0-9][a-zA-Z0-9_]*$"/>
-            <message key="name.invalidPattern"
-                     value="Method name ''{0}'' must match pattern ''{1}''."/>
+        <module title="MethodName">
+            <property title="format" value="^[a-z][a-z0-9][a-zA-Z0-9_]*$"/>
+            <message key="title.invalidPattern"
+                     value="Method title ''{0}'' must match pattern ''{1}''."/>
         </module>
 
-        <module name="TypeName">
-            <message key="name.invalidPattern"
-                     value="Type name ''{0}'' must match pattern ''{1}''."/>
+        <module title="TypeName">
+            <message key="title.invalidPattern"
+                     value="Type title ''{0}'' must match pattern ''{1}''."/>
         </module>
 
-        <module name="MemberName">
-            <property name="applyToPublic" value="false" />
-            <property name="applyToPackage" value="false" />
-            <property name="applyToProtected" value="false" />
-            <property name="format" value="^m[A-Z][a-z0-9][a-zA-Z0-9]*$"/>
-            <message key="name.invalidPattern"
-                     value="Member name ''{0}'' must match pattern ''{1}''."/>
+        <module title="MemberName">
+            <property title="applyToPublic" value="false" />
+            <property title="applyToPackage" value="false" />
+            <property title="applyToProtected" value="false" />
+            <property title="format" value="^m[A-Z][a-z0-9][a-zA-Z0-9]*$"/>
+            <message key="title.invalidPattern"
+                     value="Member title ''{0}'' must match pattern ''{1}''."/>
         </module>
 
-        <module name="ParameterName">
-            <property name="format" value="^[a-z][a-zA-Z0-9]*$"/>
-            <message key="name.invalidPattern"
-                     value="Parameter name ''{0}'' must match pattern ''{1}''."/>
+        <module title="ParameterName">
+            <property title="format" value="^[a-z][a-zA-Z0-9]*$"/>
+            <message key="title.invalidPattern"
+                     value="Parameter title ''{0}'' must match pattern ''{1}''."/>
         </module>
 
-        <module name="LocalVariableName">
-            <property name="tokens" value="VARIABLE_DEF"/>
-            <property name="format" value="^[a-z][a-zA-Z0-9]*$"/>
-            <property name="allowOneCharVarInForLoop" value="true"/>
-            <message key="name.invalidPattern"
-                     value="Local variable name ''{0}'' must match pattern ''{1}''."/>
+        <module title="LocalVariableName">
+            <property title="tokens" value="VARIABLE_DEF"/>
+            <property title="format" value="^[a-z][a-zA-Z0-9]*$"/>
+            <property title="allowOneCharVarInForLoop" value="true"/>
+            <message key="title.invalidPattern"
+                     value="Local variable title ''{0}'' must match pattern ''{1}''."/>
         </module>
 
-        <module name="ClassTypeParameterName">
-            <property name="format" value="(^[A-Z][0-9]?)$|([A-Z][a-zA-Z0-9]*[T]$)"/>
-            <message key="name.invalidPattern"
-                     value="Class type name ''{0}'' must match pattern ''{1}''."/>
+        <module title="ClassTypeParameterName">
+            <property title="format" value="(^[A-Z][0-9]?)$|([A-Z][a-zA-Z0-9]*[T]$)"/>
+            <message key="title.invalidPattern"
+                     value="Class type title ''{0}'' must match pattern ''{1}''."/>
         </module>
 
-        <module name="MethodTypeParameterName">
-            <property name="format" value="(^[A-Z][0-9]?)$|([A-Z][a-zA-Z0-9]*[T]$)"/>
-            <message key="name.invalidPattern"
-                     value="Method type name ''{0}'' must match pattern ''{1}''."/>
+        <module title="MethodTypeParameterName">
+            <property title="format" value="(^[A-Z][0-9]?)$|([A-Z][a-zA-Z0-9]*[T]$)"/>
+            <message key="title.invalidPattern"
+                     value="Method type title ''{0}'' must match pattern ''{1}''."/>
         </module>
 
     </module>
