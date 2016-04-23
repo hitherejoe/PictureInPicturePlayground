@@ -147,7 +147,7 @@ public class PlaybackOverlayFragment extends android.support.v17.leanback.app.Pl
                 if (action.getId() == mPlayPauseAction.getId()) {
                     togglePlayback(mPlayPauseAction.getIndex() == PlayPauseAction.PLAY);
                 } else if (action.getId() == mPictureInPictureAction.getId()) {
-                    getActivity().enterPictureInPicture();
+                    getActivity().enterPictureInPictureMode();
                     return;
                 }
                 if (action instanceof PlaybackControlsRow.MultiAction) {
