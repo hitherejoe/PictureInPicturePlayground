@@ -98,7 +98,7 @@ public class PlaybackActivity extends BaseActivity {
     @Override
     public void onPause() {
         super.onPause();
-        if (!inPictureInPicture() && mVideoView.isPlaying()) {
+        if (!isInPictureInPictureMode() && mVideoView.isPlaying()) {
             if (!requestVisibleBehind(true)) {
                 playPause(false);
             } else {
@@ -136,7 +136,7 @@ public class PlaybackActivity extends BaseActivity {
     }
 
     @Override
-    public void onPictureInPictureChanged(boolean inPictureInPicture) {
+    public void onPictureInPictureModeChanged(boolean inPictureInPicture) {
         if (inPictureInPicture) {
             // Hide the controls in picture-in-picture mode.
         } else {
